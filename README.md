@@ -1,6 +1,6 @@
 # SteamAvatar Downloader Extension
 
-Browser extension for downloading Steam avatars from steamavatar.io with automatic numbering
+Browser extension for downloading Steam avatars from [steamavatar.io](https://steamavatar.io/) with automatic numbering
 
 ## Features
 
@@ -14,7 +14,7 @@ Browser extension for downloading Steam avatars from steamavatar.io with automat
 
 ## Usage
 
-1. Navigate to steamavatar.io
+1. Navigate to [steamavatar.io](https://steamavatar.io/)
 2. Hover over any avatar image to see the download button
 3. Click "📥" to save the image
 4. Images are saved to Downloads/SteamAvatar/ with incremental numbering
@@ -23,13 +23,13 @@ Browser extension for downloading Steam avatars from steamavatar.io with automat
 
 ## How It Works
 
--   **Content Script**: Adds download buttons to images on steamavatar.io
+-   **Content Script**: Adds download buttons to images on [steamavatar.io](https://steamavatar.io/)
 -   **Background Worker**: Handles downloads and manages incremental counter
 -   **Storage**: Remembers settings and counters using Chrome storage API
 
 ## Troubleshooting
 
--   **Downloads not working**: Check extension permissions, verify you're on steamavatar.io, refresh page
+-   **Downloads not working**: Check extension permissions, verify you're on [steamavatar.io](https://steamavatar.io/), refresh page
 -   **Counter not incrementing**: Reset counter in popup or check download permissions
 -   **Buttons not appearing**: Refresh page, check console for errors
 
@@ -37,9 +37,9 @@ Browser extension for downloading Steam avatars from steamavatar.io with automat
 
 1. Make changes to source files
 2. Reload extension in `chrome://extensions/`
-3. Refresh steamavatar.io tabs
+3. Refresh [steamavatar.io](https://steamavatar.io/) tabs
 4. Test functionality
 
 ## License
 
-Educational purposes only. Please respect steamavatar.io's terms of service.
+Educational purposes only. Please respect [steamavatar.io](https://steamavatar.io/)'s terms of service.
