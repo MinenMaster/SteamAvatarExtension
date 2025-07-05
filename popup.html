@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                width: 300px;
+                padding: 20px;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                background: #1a1a1a;
+                color: #e0e0e0;
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .header h1 {
+                font-size: 18px;
+                margin: 0 0 5px 0;
+                color: #ffffff;
+            }
+
+            .header p {
+                font-size: 12px;
+                color: #b0b0b0;
+                margin: 0;
+            }
+
+            .section {
+                margin-bottom: 15px;
+                padding: 10px;
+                background: #2d2d2d;
+                border-radius: 5px;
+                border: 1px solid #404040;
+            }
+
+            .section h3 {
+                margin: 0 0 10px 0;
+                font-size: 14px;
+                color: #ffffff;
+            }
+
+            .input-group {
+                margin-bottom: 10px;
+            }
+
+            .input-group label {
+                display: block;
+                font-size: 12px;
+                margin-bottom: 5px;
+                color: #b0b0b0;
+            }
+
+            .input-group input {
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #555;
+                border-radius: 3px;
+                font-size: 12px;
+                box-sizing: border-box;
+                background: #3a3a3a;
+                color: #e0e0e0;
+            }
+
+            .input-group input:focus {
+                border-color: #4caf50;
+                outline: none;
+                background: #404040;
+            }
+
+            .button {
+                background: #2196f3;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 12px;
+                width: 100%;
+                transition: background 0.3s ease;
+            }
+
+            .button:hover {
+                background: #1976d2;
+            }
+
+            .button.secondary {
+                background: #680000;
+            }
+
+            .button.secondary:hover {
+                background: #850000;
+            }
+
+            .stats {
+                font-size: 12px;
+                color: #b0b0b0;
+            }
+
+            .status {
+                padding: 8px;
+                border-radius: 4px;
+                font-size: 12px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .status.success {
+                background: #1b5e20;
+                color: #a5d6a7;
+                border: 1px solid #388e3c;
+            }
+
+            .status.warning {
+                background: #e65100;
+                color: #ffcc02;
+                border: 1px solid #ff9800;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>🖼️ Steam Avatar Downloader</h1>
+            <p>Download avatars with auto-numbering</p>
+        </div>
+
+        <div id="status"></div>
+
+        <div class="section">
+            <h3>📊 Statistics</h3>
+            <div class="stats">
+                <div>
+                    Download counter:
+                    <span id="downloadCounter">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>⚙️ Settings</h3>
+            <div class="input-group">
+                <label for="folderName">Download Folder:</label>
+                <input type="text" id="folderName" placeholder="SteamAvatar" />
+            </div>
+            <button class="button" id="saveSettings">Save Settings</button>
+        </div>
+
+        <div class="section">
+            <h3>🔧 Actions</h3>
+            <div class="input-group">
+                <label for="setCounterValue">Set Counter To:</label>
+                <input
+                    type="number"
+                    id="setCounterValue"
+                    placeholder="0"
+                    min="0"
+                />
+            </div>
+            <div style="display: flex; gap: 5px">
+                <button class="button" id="setCounter" style="width: 48%">
+                    Set Counter
+                </button>
+                <button
+                    class="button secondary"
+                    id="resetCounter"
+                    style="width: 48%"
+                >
+                    Reset Counter
+                </button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>ℹ️ How to Use</h3>
+            <p style="font-size: 11px; color: #b0b0b0; line-height: 1.4">
+                1. Navigate to
+                <a
+                    href="https://steamavatar.io/"
+                    style="color: #4caf50; text-decoration: none"
+                    >steamavatar.io</a
+                ><br />
+                2. Hover over any avatar image<br />
+                3. Click the large download overlay<br />
+                4. Images will be saved with incremental numbers
+            </p>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

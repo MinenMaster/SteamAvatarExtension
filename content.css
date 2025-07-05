@@ -1,0 +1,90 @@
+/* Styles for Steam Avatar Downloader */
+
+/* Support for steamavatar.io .imgWrap structure */
+.imgWrap {
+    position: relative !important;
+}
+
+.imgWrap:hover .steam-avatar-download-overlay {
+    opacity: 1 !important;
+}
+
+.steam-avatar-wrapper {
+    position: relative !important;
+    display: inline-block !important;
+}
+
+.steam-avatar-wrapper:hover .steam-avatar-download-overlay {
+    opacity: 1 !important;
+}
+
+/* Download overlay that covers the entire image */
+.steam-avatar-download-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 48px !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+    border-radius: 4px !important;
+}
+
+.steam-avatar-download-overlay:hover {
+    background: rgba(0, 0, 0, 0.8) !important;
+    transform: scale(1.1) !important;
+    transition: all 0.2s ease !important;
+}
+
+.download-feedback {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+    color: white !important;
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    z-index: 1001 !important;
+    pointer-events: none !important;
+    font-family: Arial, sans-serif !important;
+    white-space: nowrap !important;
+}
+
+.download-feedback.success {
+    background: rgba(0, 128, 0, 0.9) !important;
+}
+
+.download-feedback.error {
+    background: rgba(128, 0, 0, 0.9) !important;
+}
+
+/* Animation for feedback */
+.download-feedback {
+    animation: feedbackPulse 0.3s ease-in-out !important;
+}
+
+@keyframes feedbackPulse {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

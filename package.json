@@ -1,0 +1,27 @@
+{
+    "name": "steam-avatar-downloader",
+    "version": "1.0.0",
+    "description": "Browser extension for downloading Steam avatars from steamavatar.io with automatic numbering",
+    "scripts": {
+        "build": "echo 'No build step required for this extension'",
+        "package": "node scripts/package.js",
+        "validate": "node scripts/validate.js"
+    },
+    "devDependencies": {
+        "archiver": "^5.3.1"
+    },
+    "keywords": [
+        "browser-extension",
+        "steam",
+        "avatar",
+        "downloader",
+        "chrome-extension",
+        "firefox-extension"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "."
+    }
+}
