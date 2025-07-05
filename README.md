@@ -4,8 +4,8 @@ Browser extension for downloading Steam avatars from steamavatar.io with automat
 
 ## Features
 
--   🖼️ **One-click downloads**: Hover over any avatar image and click the download button
--   📂 **Auto-numbering**: Incremental naming (1.png, 2.png, 3.png, etc.)
+-   **One-click downloads**: Hover over any avatar image and click the download button
+-   **Auto-numbering**: Incremental naming (1.png, 2.png, 3.png, etc.)
 
 ## Installation
 
@@ -16,7 +16,7 @@ Browser extension for downloading Steam avatars from steamavatar.io with automat
 
 1. Navigate to steamavatar.io
 2. Hover over any avatar image to see the download button
-3. Click "📥 Download" to save the image
+3. Click "📥" to save the image
 4. Images are saved to Downloads/SteamAvatar/ with incremental numbering
 
 **Extension Popup**: Click the extension icon to view stats, change folder name, or reset counter.
